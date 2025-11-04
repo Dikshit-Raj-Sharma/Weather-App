@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Weather App</title>
 </head>
+
 <body>
     <main>
         <div class="container">
@@ -14,8 +16,16 @@
                 <input type="text" placeholder="Enter The Location" id="place">
                 <button id="search">Find</button>
             </div>
+            <div id="weather-results">
+                <img id="weather-icon" src="" alt="Weather icon">
+                <h2 id="city-name"></h2>
+                <p id="temperature"></p>
+                <p id="condition"></p>
+                <p id="error-message"></p>
+            </div>
         </div>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
