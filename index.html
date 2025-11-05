@@ -18,13 +18,22 @@
             </div>
             <div id="weather-results">
                 <img id="weather-icon" src="" alt="Weather icon">
-                <h2 id="city-name"></h2>
-                <p id="temperature"></p>
-                <p id="condition"></p>
+                <div class="data-container">
+                    <div class="data-row">
+                        <span class="label">Location</span>
+                        <span  class="value" id="city-name"></span></div>
+                    <div class="data-row">
+                        <span class="label">Temperature</span>
+                        <span class="value" id="temperature"></span></div>
+                    <div class="data-row">
+                        <span class="label">Condition</span>
+                        <span  class="value" id="condition"> </span></div>
+                </div>
                 <p id="error-message"></p>
             </div>
         </div>
     </main>
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 

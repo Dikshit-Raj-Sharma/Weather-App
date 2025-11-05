@@ -1,4 +1,3 @@
-const apiKey = "646486bcc4955c3ae6c1030129fee1f2";
 const searchBtn = document.getElementById("search");
 const placeInput = document.getElementById("place");
 const weatherIcon = document.getElementById("weather-icon");
@@ -7,6 +6,7 @@ const condition = document.getElementById("condition");
 const err = document.getElementById("error-message");
 const temperature = document.getElementById("temperature");
 const weatherResult = document.getElementById("weather-results");
+const dataContainer = document.querySelector(".data-container");
 
 searchBtn.addEventListener('click', () => {
     const inputText = placeInput.value.toLowerCase();
@@ -32,11 +32,15 @@ async function fetchData(location) {
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
         weatherIcon.src=iconUrl;
         weatherIcon.alt=data.weather[0].description;
+        dataContainer.style.display = "block";
+        weatherIcon.style.display = "inline-block";
         weatherResult.classList.add("active");
     }
 
     catch (error) {
         err.textContent=error.message;
+        weatherIcon.style.display = "none";
+        dataContainer.style.display = "none";
         weatherResult.classList.add("active");
     }
 }
