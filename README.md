@@ -2,7 +2,12 @@
 
 A clean, modern web app that provides real-time weather data for any city. Built with vanilla JavaScript and the OpenWeatherMap API.
 
+---
+## 🚀 Live Demo
 
+[**Check out the live app here!**](https://dikshit-raj-sharma.github.io/Weather-App/)
+
+---
 ## ✨ Features
 
 * **Real-time Data:** Fetches current temperature, condition, and a dynamic weather icon from the OpenWeatherMap API.
@@ -34,10 +39,10 @@ A clean, modern web app that provides real-time weather data for any city. Built
 
 This project uses a hidden API key. To run it locally, you will need to create your own.
 
-1.  **Clone the repository:**
+1. **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git)
-    cd YOUR-REPO-NAME
+    git clone https://github.com/dikshit-raj-sharma/Weather-App.git
+    cd Weather-App
     ```
 
 2.  **Get your API Key:**
